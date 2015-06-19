@@ -6,7 +6,7 @@ wci <- function(temp, tempscale, windvel, windunits) {
      }
      
      if(windunits == "km/h") {
-          v <- windvel * 1.60934 #convert to MPH
+          v <- windvel / 1.60934 #convert to MPH
      } else {
           v <- windvel
      }
